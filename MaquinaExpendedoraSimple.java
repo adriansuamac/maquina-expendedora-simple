@@ -27,6 +27,8 @@ public class MaquinaExpendedoraSimple {
         this.precioBillete = precioBillete;
         this.estacionOrigen = "León";
         this.estacionDestino = estacionDestino;
+        totalDineroAcumulado = 0;
+        balanceClienteActual = 0;
     }
 
     /**

@@ -1,7 +1,7 @@
 public class MaquinaExpendedoraSimple {
     
     // El precio del billete
-    private int precio;
+    private int precioBillete;
     // La cantidad de dinero que lleva metida el cliente actual
     private int balanceClienteActual;
     // El total de dinero almacenado en la maquina desde su ultimo vaciado
@@ -9,7 +9,7 @@ public class MaquinaExpendedoraSimple {
     // El origen del billete
     private String estacionOrigen;
     // El destino del billete
-    private String estacion;
+    private String estacionDestino;
 
     /**
      * Crea una maquina expendedora de billetes de tren con el 
@@ -17,16 +17,16 @@ public class MaquinaExpendedoraSimple {
      * del billete que se recibe es mayor que 0.
      */
     public MaquinaExpendedoraSimple() {
-        precio = 20;
+        precioBillete = 20;
         balanceClienteActual = 0;
         totalDineroAcumulado = 0;
         estacionOrigen = "León";
-        estacion = "Madrid";
+        estacionDestino = "Madrid";
     }
-    public MaquinaExpendedoraSimple(int precioBillete, String estacionDestino){
-        precio = precioBillete;
+    public MaquinaExpendedoraSimple(int precio, String Destino){
+        precioBillete = precio;
         estacionOrigen = "León";
-        estacion = estacionDestino;
+        estacionDestino = Destino;
         totalDineroAcumulado = 0;
         balanceClienteActual = 0;
     }
@@ -35,7 +35,7 @@ public class MaquinaExpendedoraSimple {
      * Devuelve el precio del billete
      */
     public int getPrecioBillete() {
-        return precio;
+        return precioBillete;
     }
 
     /**
@@ -59,8 +59,8 @@ public class MaquinaExpendedoraSimple {
         // Simula la impresion de un billete
         System.out.println("##################");
         System.out.println("# Billete de tren:");
-        System.out.println("# De " + estacionOrigen + " a " + estacion);
-        System.out.println("# " + precio + " euros.");
+        System.out.println("# De " + estacionOrigen + " a " + estacionDestino);
+        System.out.println("# " + precioBillete + " euros.");
         System.out.println("##################");
         System.out.println();
 

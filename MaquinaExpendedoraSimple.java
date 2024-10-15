@@ -57,6 +57,9 @@ public class MaquinaExpendedoraSimple {
         precioBillete -= cantidadARestar;
     }
 
+    public void vaciarDepositoDinero(){
+        totalDineroAcumulado = 0;
+    }
     /**
      * Simula la introduccion de dinero por parte del cliente actual
      */
